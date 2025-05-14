@@ -1,0 +1,282 @@
+@charset "utf-8";
+:root {
+  --color-general: #66615b;
+  --color-titulos: #111111;
+  --fondo-azul: #f5fafd;
+  --icono-naranja: #f5593d;
+  --icono-gris: #888;
+  --fondo-footer: #252422;
+  --letra-footer: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f96332, #e54e74);
+  color: var(--color-general);
+}
+
+header {
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-download {
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: var(--icono-gris);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  color: white;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.content ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.btn-start {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.image img {
+  max-width: 300px;
+  transform: rotate(-25deg);
+}
+
+.features {
+  background: var(--fondo-azul);
+}
+
+.features .feature {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-general);
+}
+
+.features .feature i {
+  font-size: 30px;
+  min-width: 30px;
+  margin-top: 4px;
+  color: var(--icono-naranja);
+}
+
+.features .feature h3 {
+  font-family: 'Dosis', sans-serif;
+  color: var(--color-titulos);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.features .feature p {
+  color: var(--color-general);
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.about {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-general);
+}
+
+.about h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 32px;
+  color: var(--color-titulos);
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.checklist i {
+  color: var(--icono-naranja);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.screenshots {
+  background-color: var(--fondo-azul);
+}
+
+.screenshots h2 {
+  font-family: 'Dosis', sans-serif;
+  color: var(--color-titulos);
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.screenshots p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: var(--color-general);
+}
+
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.bg-icon {
+  background-color: var(--icono-naranja);
+  border-radius: 50%;
+}
+
+.testimonials {
+  background-color: var(--fondo-azul);
+}
+
+.testimonials h2 {
+  font-family: 'Dosis', sans-serif;
+  color: var(--color-titulos);
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.testimonials p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: var(--color-general);
+}
+
+.testimonial-card {
+  background: #ffffff;
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  color: var(--color-general);
+  margin-bottom: 0;
+}
+
+.testimonial-card img {
+  object-fit: cover;
+  border: 2px solid var(--fondo-azul);
+}
+
+.download {
+  background: linear-gradient(to right, #f96332, #e54e74);
+}
+
+.download h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.store-btn {
+  transition: transform 0.2s ease;
+}
+
+.store-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--fondo-footer);
+}
+
+.footer a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer a:hover {
+  opacity: 0.75;
+}
+
+.footer p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--letra-footer);
+  margin-top: 10px;
+}
+
+
+
